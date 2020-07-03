@@ -2,7 +2,23 @@
 
 ## Description
 
-## How to setup
+A simple search engine for Sinhala songs whcih supports both English & Sinhala queries. Search engine was built based on ElasticSearch and thi engine supports both simple and advance querie such as ranged queris faceting.
+
+## Requirements
+
+1. Python 3.8.3
+2. AWS ElasticSearch
+2. elasticsearch 7.8.0
+
+## How to Setup and RUN
+
+1. Install ElasticSearch on the local machine.
+2. create python 3.8.3 virtual environment.
+3. Add elasticsearch to python using pip<br />
+      ```pip install elasticsearch```
+4. Start ElasticSearch service by executing command<br />
+      ```sudo /etc/init.d/elasticsearch start```
+5. Navigate to the project diractory & type <br />```python app.py```
 
 ## Describing the data
 
@@ -24,10 +40,13 @@ Dataset was extracted from http://geepadura.blogspot.com/ and extracted data con
  },
  
 ```
-## Techniques used in designing indexing and querying
+## Supported Features
 
-### indexing
+1. Supports both sinhala & English queries
+2. Can search by title, title_sinhala, title_english, artist, music, melody, lyrics_author, lyrics, upload_year
+3. Range queries supported
+   example - can search artist's songs between a time period
 
-### quering
+## Indexing and querying techniques
 
-## Use of advanced features like, Faceting, Text Mining, Text Classification 
+## Use of text mining and text classfication
