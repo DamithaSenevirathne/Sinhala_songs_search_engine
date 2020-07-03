@@ -10,16 +10,6 @@ A simple search engine for Sinhala songs whcih supports both English & Sinhala q
 2. AWS ElasticSearch
 2. elasticsearch 7.8.0
 
-## How to Setup and RUN
-
-1. Install ElasticSearch on the local machine.
-2. create python 3.8.3 virtual environment.
-3. Add elasticsearch to python using pip<br />
-      ```pip install elasticsearch```
-4. Start ElasticSearch service by executing command<br />
-      ```sudo /etc/init.d/elasticsearch start```
-5. Navigate to the project diractory & type <br />```python app.py```
-
 ## Describing the data
 
 Dataset was extracted from http://geepadura.blogspot.com/ and extracted data contains following fields
@@ -40,6 +30,18 @@ Dataset was extracted from http://geepadura.blogspot.com/ and extracted data con
  },
  
 ```
+
+## How to Setup and RUN
+
+1. Install ElasticSearch on the local machine.
+2. create python 3.8.3 virtual environment.
+3. Add elasticsearch to python using pip<br />
+      ```pip install elasticsearch```
+4. Start ElasticSearch service by executing command<br />
+      ```sudo /etc/init.d/elasticsearch start```
+5. Navigate to the project diractory & type <br />```python app.py```
+
+
 ## Supported Features
 
 1. Supports both sinhala & English queries
