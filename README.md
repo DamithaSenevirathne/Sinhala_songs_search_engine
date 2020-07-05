@@ -48,3 +48,7 @@ Dataset was extracted from http://geepadura.blogspot.com/ and extracted data con
 2. Can search by title, title_sinhala, title_english, artist, music, melody, lyrics_author, lyrics, upload_year
 3. Range queries supported
    example - can search artist's songs between a time period
+   
+## Advanced Features
+
+NLP based (Fasttext) query similarity suggester is implemented
