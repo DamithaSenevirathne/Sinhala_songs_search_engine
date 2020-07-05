@@ -1,7 +1,7 @@
 from elasticsearch import Elasticsearch
 from elasticsearch import helpers
 import json
-from queries import getMultiMatchAgg
+from queries import multiMatchAggreagation
 from queries import rangeQuaries
 
 es = Elasticsearch(HOST="http://localhost",PORT=9200)
