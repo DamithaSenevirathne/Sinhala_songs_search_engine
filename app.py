@@ -1,7 +1,7 @@
 from elasticsearch import Elasticsearch
 from elasticsearch import helpers
 import json
-from queries import getMultiMatchAgg
+from queries import multiMatchAggreagation
 from queries import rangeQuaries
 
 es = Elasticsearch(HOST="http://localhost",PORT=9200)
@@ -76,7 +76,7 @@ def boostedSearch(search_query):
 
         
     boostedFields = [field_1,field_2,field_3,field_4,field_5,field_6,field_8]
-    res = es.search(index="index",body=getMultiMatchAgg(search_query,boostedFields))
+    res = es.search(index="index",body=multiMatchAggreagation(search_query,boostedFields))
     return res
 
 
